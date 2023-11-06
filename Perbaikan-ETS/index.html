@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .card{
+            border: 2px solid blue;
+        }
+    
+        .card-body {
+            text-align: center;
+        }
+    
+        .details-btn {
+            display: block;
+            margin: 0 auto;
+        }
+
+    </style>
+    <title>Perbaikan ETS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-1"></div>
+                                <button class="btn btn-primary details-btn" data-id="1">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-2"></div>
+                                <button class="btn btn-primary details-btn" data-id="2">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-3"></div>
+                                <button class="btn btn-primary details-btn" data-id="3">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-4"></div>
+                                <button class="btn btn-primary details-btn" data-id="4">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-5"></div>
+                                <button class="btn btn-primary details-btn" data-id="5">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-6"></div>
+                                <button class="btn btn-primary details-btn" data-id="6">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-7"></div>
+                                <button class="btn btn-primary details-btn" data-id="7">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-7"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-8"></div>
+                                <button class="btn btn-primary details-btn" data-id="8">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-8"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-9"></div>
+                                <button class="btn btn-primary details-btn" data-id="9">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-9"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-10"></div>
+                                <button class="btn btn-primary details-btn" data-id="10">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-11"></div>
+                                <button class="btn btn-primary details-btn" data-id="11">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-11"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-12"></div>
+                                <button class="btn btn-primary details-btn" data-id="12">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-12"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-13"></div>
+                                <button class="btn btn-primary details-btn" data-id="13">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-13"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-14"></div>
+                                <button class="btn btn-primary details-btn" data-id="14">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-14"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-15"></div>
+                                <button class="btn btn-primary details-btn" data-id="15">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-15"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-16"></div>
+                                <button class="btn btn-primary details-btn" data-id="16">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-16"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-17"></div>
+                                <button class="btn btn-primary details-btn" data-id="17">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-17"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-18"></div>
+                                <button class="btn btn-primary details-btn" data-id="18">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-18"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-19"></div>
+                                <button class="btn btn-primary details-btn" data-id="19">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-19"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="card-text text-xs font-weight-bold text-primary text-uppercase mb-1" id="pokemon-20"></div>
+                                <button class="btn btn-primary details-btn" data-id="20">Details</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters align-items-center" style="display: none;" id="details-20"></div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="./script.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+</body>
+</html>
